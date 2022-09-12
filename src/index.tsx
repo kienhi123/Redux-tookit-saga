@@ -7,6 +7,7 @@ import reportWebVitals from './reportWebVitals';
 import './index.css';
 import ReactDOM from 'react-dom';
 import { BrowserRouter } from 'react-router-dom';
+import { CssBaseline } from '@material-ui/core';
 
 
 
@@ -14,10 +15,10 @@ ReactDOM.render(
   <React.StrictMode>
     <Provider store={store}>
       <BrowserRouter>
+        <CssBaseline />
         <App />
       </BrowserRouter>
     </Provider>
-
   </React.StrictMode>,
   document.getElementById('root')
 );
