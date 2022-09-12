@@ -1,9 +1,15 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import logo from './logo.svg';
 import { Counter } from './features/counter/Counter';
 import './App.css';
+import ctyApi from './api/cityApi';
+
 
 function App() {
+  // eslint-disable-next-line @typescript-eslint/no-unused-expressions
+  useEffect(() => {
+    ctyApi.getAll().then(Response => console.log(Response))
+  })
   return (
     <div className="App">
       <header className="App-header">
