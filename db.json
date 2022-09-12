@@ -15,6 +15,11 @@
   ],
   "students": [
     {
+      "id": 1,
+      "masv": "PH178833",
+      "name": "Kiên"
+    },
+    {
       "id": 2,
       "masv": "PH17523",
       "name": "Huy"

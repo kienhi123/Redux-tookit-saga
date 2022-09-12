@@ -8,7 +8,7 @@ import ctyApi from './api/cityApi';
 function App() {
   // eslint-disable-next-line @typescript-eslint/no-unused-expressions
   useEffect(() => {
-    ctyApi.getAll().then(Response => console.log(Response))
+    ctyApi.getAll().then(response => console.log(response))
   })
   return (
     <div className="App">
